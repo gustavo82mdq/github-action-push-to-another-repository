@@ -37,6 +37,7 @@ TARGET_DIR=$(mktemp -d)
 # but not anymore. Otherwise we had to remove the files from "$CLONE_DIR",
 # including "." and with the exception of ".git/"
 mv "$CLONE_DIR/.git" "$TARGET_DIR"
+mv "$CLONE_DIR/pom.xml" "$TARGET_DIR"
 
 if [ ! -d "$SOURCE_DIRECTORY" ]
 then
